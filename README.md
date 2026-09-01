@@ -62,10 +62,6 @@ https://github.com/robertdavidgraham/masscan
 
 # MASSCAN: Mass IP port scanner
 
-
-
-# MASSCAN: Mass IP port scanner
-
 This is an Internet-scale port scanner. It can scan the entire Internet
 in under 5 minutes, transmitting 10 million packets per second,
 from a single machine.
