@@ -1,0 +1,7 @@
+paused.conf
+.Makefile.swp
+.vscode
+vs10/.vs/
+bin/masscan.exe
+bin/masscan.exe
+tmp/
