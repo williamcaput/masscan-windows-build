@@ -1,4 +1,66 @@
 [![unittests](https://github.com/robertdavidgraham/masscan/actions/workflows/unittests.yml/badge.svg?branch=master)](https://github.com/robertdavidgraham/masscan/actions/workflows/unittests.yml/?branch=master)
+# Masscan — Precompiled Windows x64 Build
+
+This repository provides a **precompiled Windows x64 executable of Masscan** for users who do not want to compile Masscan from source.
+
+## Download the Windows Executable
+
+The compiled Windows executable is available from the **GitHub Releases** page:
+
+**[Download masscan.exe — Windows x64](https://github.com/williamcaput/masscan-windows-build/releases/download/v1.0-windows/masscan.exe)**
+
+Release page:
+
+**[Masscan Windows x64 v1.0](https://github.com/williamcaput/masscan-windows-build/releases/tag/v1.0-windows)**
+
+The executable is **not stored in the `bin` directory of the GitHub source repository**. It is distributed as a GitHub Release asset.
+
+### Requirements
+
+* Windows 10 or Windows 11, 64-bit
+* Administrator privileges
+* Npcap/WinPcap-compatible packet capture driver
+
+### Running Masscan
+
+After downloading `masscan.exe`, open **Command Prompt or PowerShell as Administrator** and change to the directory containing the executable.
+
+For example:
+
+```powershell
+cd $HOME\Downloads
+.\masscan.exe --selftest
+```
+
+To display the available options:
+
+```powershell
+.\masscan.exe --help
+```
+
+Example scan of an authorized local network:
+
+```powershell
+.\masscan.exe 192.168.1.0/24 -p80,443 --rate 1000
+```
+
+> **Important:** Only scan systems and networks you own or have explicit authorization to test.
+
+## Windows Security Notice
+
+Masscan is a high-speed network scanning utility. Antivirus and endpoint-security products may classify network-scanning software as potentially unwanted or malicious based on heuristic or machine-learning detection.
+
+This executable was compiled from the Masscan source code using MinGW-w64. Users should independently verify the executable and its SHA-256 checksum before use.
+
+## Upstream Project
+
+Masscan was developed by Robert David Graham. The original source code and project documentation are available from the upstream Masscan project:
+
+https://github.com/robertdavidgraham/masscan
+
+---
+
+# MASSCAN: Mass IP port scanner
 
 
 
